@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-navbar color="secondary">
+    <ion-title>
+      Hello World
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+	<h1>Welcome to my counter app,</h1>
+	<h2>{{ myName }}</h2>
+	<p text-center>
+		{{ counter }}
+	</p>
+  <button (click)="buttonPressed()" ion-button color="secondary">Increment</button>
+  <button (click)="buttonReset()"   ion-button color="danger">Reset</button>
+  <button (click)="buttonDecrement()" ion-button color="secondary">Decrement</button>
+   <button (click)="aboutUs()" ion-button color="dark">About Us</button>
+   <button (click)="actionSheet()" ion-button color="primary">Action Sheet</button>
+   <button (click)="newPage()" ion-button color="secondary">Next Page</button>
+
+
+
+  {{ msg }}
+</ion-content>

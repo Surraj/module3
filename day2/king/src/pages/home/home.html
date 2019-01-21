@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-navbar color="danger">
+    <ion-title>
+      King Of Malaysia
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+  <ion-item *ngFor="let king of kingList" (click)="openPage(king)">
+    <ion-thumbnail item-start>
+      <img src="{{ king.img_url }}">
+    </ion-thumbnail>
+    <h3 text-wrap><b>{{ king.name }}</b></h3>
+    <h4> {{ king.year }}</h4>
+    <p>{{ king.state }}</p>
+  </ion-item>
+</ion-list>
+</ion-content>
